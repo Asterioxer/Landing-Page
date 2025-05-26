@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicks Elite | Premium Sneakers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Kicks<span>Elite</span></div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="cart-icon"><a href="#"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Step Into <span>Exclusivity</span></h1>
+                <p>Discover limited edition sneakers from the world's most coveted brands. Handpicked for true sneaker enthusiasts.</p>
+                <div class="hero-buttons">
+                    <a href="#shop" class="btn">Shop Now</a>
+                    <a href="#collections" class="btn btn-outline">View Collections</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-sneaker.jpg" alt="Premium Sneaker">
+            </div>
+        </div>
+    </section>
+
+    <section class="brands">
+        <div class="container">
+            <h2>Featured Brands</h2>
+            <div class="brands-grid">
+                <img src="images/nike-logo.jpg" alt="Nike" width="100" height="50" link="https://www.nike.com">
+                <img src="images/adidas-logo.png" alt="Adidas" width="100" height="50" link="https://www.adidas.com">
+                <img src="images/jordan-logo.jpg" alt="Jordan" width="100" height="50" link="https://www.nike.com/jordan">
+                <img src="images/puma-logo.jpg" alt="Puma" width="100" height="50" link="https://www.puma.com">
+                <img src="images/new-balance-logo.png" alt="New Balance" width="100" height="50" link="https://www.newbalance.com">
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Drops</h2>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="nike">Nike</button>
+                    <button class="filter-btn" data-filter="jordan">Jordan</button>
+                    <button class="filter-btn" data-filter="adidas">Adidas</button>
+                    <button class="filter-btn" data-filter="limited">Limited</button>
+                </div>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="nike">
+                    <div class="product-image">
+                        <img src="images/sneaker1.jpg" alt="Nike Air Max 97">
+                        <div class="product-badge">Just In</div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Air Max 97</h3>
+                        <p class="product-description">OG Silver Bullet - 2023 Release</p>
+                        <div class="product-price">
+                            <span class="current-price">₹ 1790.99</span>
+                            <span class="original-price">₹ 2190.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="jordan limited">
+                    <div class="product-image">
+                        <img src="images/sneaker2.jpg" alt="Air Jordan 1 Retro High OG">
+                        <div class="product-badge">Limited</div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Air Jordan 1 Retro High OG</h3>
+                        <p class="product-description">Chicago Lost & Found - 2022</p>
+                        <div class="product-price">
+                            <span class="current-price">₹ 12399.99</span>
+                            <span class="original-price">₹ 4500.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+              
+                <!-- Product 3 -->
+                <div class="product-card" data-category="adidas">
+                    <div class="product-image">
+                        <img src="images/sneaker3.jpg" alt="Adidas Yeezy Boost 350 V2">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Adidas Yeezy Boost 350 V2</h3>
+                        <p class="product-description">Zebra - 2023 Restock</p>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2209.99</span>
+                            <span class="original-price">₹ 2250.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="nike limited">
+                    <div class="product-image">
+                        <img src="images/sneaker4.jpg" alt="Nike Dunk Low Retro">
+                        <div class="product-badge">Limited</div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Dunk Low Retro</h3>
+                        <p class="product-description">Panda - 2023 Release</p>
+                        <div class="product-price">
+                            <span class="current-price">₹ 1319.99</span>
+                            <span class="original-price">₹ 1450.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+<div class="product-card" data-category="nike">
+    <div class="product-image">
+        <img src="images/sneaker5.jpg" alt="Nike Air Force 1">
+        <div class="product-badge">New Arrival</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Nike Air Force 1</h3>
+        <p class="product-description">White - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 9249.99</span>
+            <span class="original-price">₹ 12220.00</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 6 -->
+<div class="product-card" data-category="adidas">
+    <div class="product-image">
+        <img src="images/sneaker6.jpg" alt="Adidas Superstar">
+        <div class="product-badge">Best Seller</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Adidas Superstar</h3>
+        <p class="product-description">Black - 2023 Restock</p>
+        <div class="product-price">
+            <span class="current-price">₹ 7933.99</span>
+            <span class="original-price">₹ 12300.00</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 7 -->
+<div class="product-card" data-category="converse">
+    <div class="product-image">
+        <img src="images/sneaker7.jpg" alt="Converse Chuck Taylor">
+        <div class="product-badge">Limited Edition</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Converse Chuck Taylor</h3>
+        <p class="product-description">Red - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 6932.99</span>
+            <span class="original-price">₹ 9540.00</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 8 -->
+<div class="product-card" data-category="vans">
+    <div class="product-image">
+        <img src="images/sneaker8.jpg" alt="Vans Old Skool">
+        <div class="product-badge">New Arrival</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Vans Old Skool</h3>
+        <p class="product-description">Navy - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 8945.99</span>
+            <span class="original-price">₹ 11330.00</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 9 -->
+<div class="product-card" data-category="puma">
+    <div class="product-image">
+        <img src="images/sneaker9.jpg" alt="Puma Suede">
+        <div class="product-badge">Best Seller</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Puma Suede</h3>
+        <p class="product-description">Black - 2023 Restock</p>
+        <div class="product-price">
+            <span class="current-price">₹ 7999</span>
+            <span class="original-price">₹ 16500</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+                <!-- Product 10 -->
+<div class="product-card" data-category="new balance">
+    <div class="product-image">
+        <img src="images/sneaker10.jpg" alt="New Balance 574">
+        <div class="product-badge">Limited Edition</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>New Balance 574</h3>
+        <p class="product-description">Grey - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 8999</span>
+            <span class="original-price">₹ 11000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 11 -->
+<div class="product-card" data-category="reebok">
+    <div class="product-image">
+        <img src="images/sneaker11.jpg" alt="Reebok Classic Leather">
+        <div class="product-badge">Best Seller</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Reebok Classic Leather</h3>
+        <p class="product-description">White - 2023 Restock</p>
+        <div class="product-price">
+            <span class="current-price">₹ 6939</span>
+            <span class="original-price">₹ 9000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 12 -->
+<div class="product-card" data-category="asics">
+    <div class="product-image">
+        <img src="images/sneaker12.jpg" alt="Asics Gel-Kayano">
+        <div class="product-badge">New Arrival</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Asics Gel-Kayano</h3>
+        <p class="product-description">Black - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 9999</span>
+            <span class="original-price">₹ 12000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 13 -->
+<div class="product-card" data-category="brooks">
+    <div class="product-image">
+        <img src="images/sneaker13.jpg" alt="Brooks Ghost">
+        <div class="product-badge">Limited Edition</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Brooks Ghost</h3>
+        <p class="product-description">Navy - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 8999</span>
+            <span class="original-price">₹ 11000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 14 -->
+<div class="product-card" data-category="saucony">
+    <div class="product-image">
+        <img src="images/sneaker14.jpg" alt="Saucony Freedom">
+        <div class="product-badge">Best Seller</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Saucony Freedom</h3>
+        <p class="product-description">Grey - 2023 Restock</p>
+        <div class="product-price">
+            <span class="current-price">₹ 7999</span>
+            <span class="original-price">₹ 10000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+                <!-- Product 15 -->
+<div class="product-card" data-category="mizuno">
+    <div class="product-image">
+        <img src="images/sneaker15.jpg" alt="Mizuno Wave">
+        <div class="product-badge">New Arrival</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Mizuno Wave</h3>
+        <p class="product-description">Blue - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 9999</span>
+            <span class="original-price">₹ 12000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 16 -->
+<div class="product-card" data-category="under armour">
+    <div class="product-image">
+        <img src="images/sneaker16.jpg" alt="Under Armour Curry">
+        <div class="product-badge">Best Seller</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Under Armour Curry</h3>
+        <p class="product-description">Red - 2023 Restock</p>
+        <div class="product-price">
+            <span class="current-price">₹ 8979</span>
+            <span class="original-price">₹ 11000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 17 -->
+<div class="product-card" data-category="newton">
+    <div class="product-image">
+        <img src="images/sneaker17.jpg" alt="Newton Running">
+        <div class="product-badge">Limited Edition</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Newton Running</h3>
+        <p class="product-description">Green - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 9999</span>
+            <span class="original-price">₹ 12000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 18 -->
+<div class="product-card" data-category="hoka one one">
+    <div class="product-image">
+        <img src="images/sneaker18.jpg" alt="Hoka One One Bondi">
+        <div class="product-badge">New Arrival</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Hoka One One Bondi</h3>
+        <p class="product-description">Black - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 10999</span>
+            <span class="original-price">₹ 13000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Product 19 -->
+<div class="product-card" data-category="altra">
+    <div class="product-image">
+        <img src="images/sneaker19.jpg" alt="Altra Torin">
+        <div class="product-badge">Best Seller</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Altra Torin</h3>
+        <p class="product-description">Grey - 2023 Restock</p>
+        <div class="product-price">
+            <span class="current-price">₹ 8999</span>
+            <span class="original-price">₹ 11000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+                <!-- Product 20 -->
+<div class="product-card" data-category="topo athletic">
+    <div class="product-image">
+        <img src="images/sneaker20.jpg" alt="Topo Athletic Magnifly">
+        <div class="product-badge">Limited Edition</div>
+        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-info">
+        <h3>Topo Athletic Magnifly</h3>
+        <p class="product-description">Navy - 2023 Release</p>
+        <div class="product-price">
+            <span class="current-price">₹ 9999</span>
+            <span class="original-price">₹ 12000</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+            </div>
+            <div class="load-more">
+                <button class="btn">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections" class="collections">
+        <div class="container">
+            <h2>Exclusive Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <img src="images/collection1.jpg" alt="Retro Classics">
+                    <div class="collection-info">
+                        <h3>Retro Classics</h3>
+                        <p>Iconic sneakers from the golden era</p>
+                        <a href="#" class="btn btn-small">View Collection</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="images/collection2.jpg" alt="Limited Editions">
+                    <div class="collection-info">
+                        <h3>Limited Editions</h3>
+                        <p>Rare finds for serious collectors</p>
+                        <a href="#" class="btn btn-small">View Collection</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="images/collection3.jpg" alt="New Releases">
+                    <div class="collection-info">
+                        <h3>New Releases</h3>
+                        <p>Fresh drops updated weekly</p>
+                        <a href="#" class="btn btn-small">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Founded in 2023, KicksElite began as a small sneaker boutique in Ranchi, a small city in Jharkhand. What started as a passion project between three sneakerheads has grown into one of the most trusted sources for rare and exclusive sneakers worldwide.</p>
+                <p>We personally authenticate every pair that comes through our doors, ensuring you only receive 100% genuine products. Our team of experts hand-selects each release, focusing on quality, exclusivity, and cultural significance.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="images/about-us.jpg" alt="Our Store">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 609, Chandni Chowk, Ranchi, Jharkhand</p>
+                    <p><i class="fas fa-phone"></i> (91) 90653 49149 </p>
+                    <p><i class="fas fa-envelope"></i> sohamaxpauli@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>KicksElite</h3>
+                    <p>The premier destination for rare and exclusive sneakers. Authenticity guaranteed.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive drops and 10% off your first order.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 KicksElite. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Product filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                productCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category').includes(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Simple cart counter
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        const cartCount = document.querySelector('.cart-count');
+        let count = 0;
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                count++;
+                cartCount.textContent = count;
+                button.textContent = 'Added!';
+                setTimeout(() => {
+                    button.textContent = 'Add to Cart';
+                }, 2000);
+            });
+        });
+
+        // Wishlist toggle
+        const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+        
+        wishlistButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const icon = button.querySelector('i');
+                icon.classList.toggle('far');
+                icon.classList.toggle('fas');
+                icon.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
